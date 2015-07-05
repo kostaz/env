@@ -34,7 +34,6 @@ sudo apt-get install -y libsdl2-dev libsdl1.2-dev diffstat chrpath # for yocto
 sudo apt-get install -y build-essential axel mc autotools-dev autoconf pkg-config
 sudo apt-get install -y u-boot-tools minicom libssl-dev openssh-server libwrap0-dev
 
-sudo apt-get install -y wine # for XDB
 sudo apt-get install -y openjdk-8-jre
 sudo apt-get install -y tmux htop
 
@@ -75,6 +74,7 @@ sudo apt-get install -y plasticscm-client-core plasticscm-client-gtk
 
 # Setup vim environment
 # ================================================================================
+rm -rf ~/.vim ~/.vimrc ~/.gvimrc
 cd /tmp
 git clone https://github.com/kostaz/dotvim.git
 cp dotvim/.vimrc ~
@@ -86,5 +86,6 @@ mv dotvim ~/.vim
 
 # Demands user interaction
 # sudo apt-get install -y wireshark
+# sudo apt-get install -y wine # for XDB
 
 echo "!!! Update name and email in .gitconfig !!!"
