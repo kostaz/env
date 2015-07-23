@@ -199,8 +199,8 @@ set undofile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set expandtab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=8
+set tabstop=8
 set smarttab
 
 set lbr
@@ -587,8 +587,8 @@ source ~/.vim/buff_select.vim
 source ~/.vim/hl_white_space.vim
 
 set expandtab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=8
+set tabstop=8
 set smarttab
 
 " call ToggleShowWhitespace()
@@ -602,7 +602,7 @@ map <F8> :set list!<CR>
 " set guifont=Courier\ 10\ Pitch\ 10
 " set guifont=DejaVu\ Sans\ Mono\ 10
 " set guifont=Monospace\ 15
-set guifont=Ubuntu\ Mono\ 15
+set guifont=Ubuntu\ Mono\ 18
 
 map <F3> :cnext<CR>
 map <S-F3> :cprev<CR>
@@ -646,3 +646,5 @@ nmap <leader>a :Ack<cr>
 set linespace=3
 
 au VimEnter * if &diff | execute 'windo set wrap' | endif
+
+set paste
