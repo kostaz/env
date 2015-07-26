@@ -4,7 +4,7 @@
 # ================================================================================
 rm -rf ~/.vim ~/.vimrc ~/.gvimrc && \
 cp -R .vim .vimrc .gvimrc .bashrc .gitconfig ~ && \
-source ~/.bashrc && \
+source ~/.bashrc
 #### git clone https://github.com/kostaz/dotvim.git
 #### cp dotvim/.vimrc ~
 #### cd dotvim
