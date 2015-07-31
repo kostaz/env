@@ -127,7 +127,10 @@ fi
 # PS1="$PS1 \n------->\$ "
 # PS1="\n\[\033[0;34m\][\T][\[\u@\H]\n\n[\w]\n\n\$ "
 # PS1="\n[\t][\[\u@\H]\n\n[\w]\n\n\$ " # THE BEST
-PS1="\n[\[\u@\H] [\w]\n\n"
+
+# PS1="\n[\[\u@\H] [\w]\n\n"
+PS1="\n[\w]\n\n"
+
 # PS1="\n\\[\033[0;36m\]\T \
 # [\[\033[1;34m\]\u@\H\[\033[0;37m\]\
 # \[\033[0;32m\]\[\033[1;30m\]] \n\[\033[1;36m\]\w \n\$ "
@@ -178,5 +181,11 @@ alias ra='repo forall -c '
 # clear screen for real
 # http://stackoverflow.com/questions/5367068/clear-the-ubuntu-bash-screen-for-real
 alias cls='printf "\033c"'
+
+function f()
+{
+	term=$@
+	find . -iname "*${term}*"
+}
 
 export LC_ALL="en_US.UTF-8"

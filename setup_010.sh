@@ -63,6 +63,12 @@ sudo apt-get install -y lib32ncurses5 && \
 sudo rm -f /usr/bin/gmake && \
 sudo ln -s /usr/bin/make /usr/bin/gmake && \
 
+# Useful utilities
+# ================================================================================
+sudo apt-get install -y gcal && \
+sudo apt-get install -y ncdu && \
+sudo apt-get install -y fish && \
+
 # Fonts
 # ================================================================================
 sudo apt-get install -y culmus xfonts-efont-unicode && \
