@@ -188,4 +188,10 @@ function f()
 	find . -iname "*${term}*"
 }
 
+function g()
+{
+	term=$@
+	grep --color=auto -irnH "${term}"
+}
+
 export LC_ALL="en_US.UTF-8"
