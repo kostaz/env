@@ -600,4 +600,4 @@ map <F9> :TlistToggle<CR>
 map <F7> :call ToggleShowWhitespace()<CR>
 map <F8> :set list!<CR>
 
-
+set printoptions=paper:A4
