@@ -205,9 +205,9 @@ set undofile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set expandtab
-set shiftwidth=4
-set tabstop=4
+set noexpandtab
+set shiftwidth=8
+set tabstop=8
 set smarttab
 
 set lbr
