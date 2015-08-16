@@ -58,6 +58,8 @@ sudo apt-get install -y openjdk-8-jre && \
 sudo apt-get install -y tmux && \
 sudo apt-get install -y htop && \
 sudo apt-get install -y ranger && \
+sudo apt-get install -y putty && \
+sudo apt-get install -y krusader && \
 sudo dpkg --add-architecture i386 && \
 sudo apt-get update  -y && \
 sudo apt-get install -y lib32z1 && \
