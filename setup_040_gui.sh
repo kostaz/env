@@ -8,4 +8,4 @@ sudo apt-get install -y meld && \
 sudo apt-get install -y kdiff3 && \
 sudo apt-get install -y chromium-browser && \
 sudo apt-get install -y flashplugin-installer && \
-sudo apt-get install -y adobe-flashplugin && \
+sudo apt-get install -y adobe-flashplugin
