@@ -602,7 +602,7 @@ map <F8> :set list!<CR>
 " set guifont=Courier\ 10\ Pitch\ 10
 " set guifont=DejaVu\ Sans\ Mono\ 10
 " set guifont=Monospace\ 15
-set guifont=Ubuntu\ Mono\ 18
+set guifont=Ubuntu\ Mono\ 14
 
 map <F3> :cnext<CR>
 map <S-F3> :cprev<CR>
