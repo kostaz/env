@@ -17,6 +17,7 @@ sudo apt-get install -y gettext && \
 sudo apt-get install -y git && \
 sudo apt-get install -y git-cola && \
 sudo apt-get install -y git-svn && \
+sudo apt-get install -y tig && \
 sudo apt-get install -y subversion && \
 sudo apt-get install -y tkcvs && \
 sudo apt-get install -y autoconf && \
@@ -56,6 +57,7 @@ sudo apt-get install -y openssh-server && \
 sudo apt-get install -y libwrap0-dev && \
 sudo apt-get install -y openjdk-8-jre && \
 sudo apt-get install -y tmux && \
+sudo apt-get install -y cifs-utils && \
 sudo apt-get install -y htop && \
 sudo apt-get install -y ranger && \
 sudo apt-get install -y putty && \
