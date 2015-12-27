@@ -198,7 +198,7 @@ set undofile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set expandtab
+set noexpandtab
 set shiftwidth=8
 set tabstop=8
 set smarttab
@@ -586,7 +586,7 @@ set so=1
 source ~/.vim/buff_select.vim
 source ~/.vim/hl_white_space.vim
 
-set expandtab
+set noexpandtab
 set shiftwidth=8
 set tabstop=8
 set smarttab
