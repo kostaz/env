@@ -208,7 +208,7 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indet
-set wrap "Wrap lines
+set nowrap "Wrap lines
 
 
 """"""""""""""""""""""""""""""
@@ -602,7 +602,7 @@ map <F8> :set list!<CR>
 " set guifont=Courier\ 10\ Pitch\ 10
 " set guifont=DejaVu\ Sans\ Mono\ 10
 " set guifont=Monospace\ 15
-set guifont=Ubuntu\ Mono\ 14
+set guifont=Ubuntu\ Mono\ 15
 
 map <F3> :cnext<CR>
 map <S-F3> :cprev<CR>
@@ -612,7 +612,7 @@ map <leader>h :GrepBuffer -i expand("<cword>")<CR>
 
 set cursorline
 " set nowrap
-set wrap
+set nowrap
 
 set lines=999 columns=999
 
@@ -645,6 +645,6 @@ nmap <leader>a :Ack<cr>
 
 set linespace=3
 
-au VimEnter * if &diff | execute 'windo set wrap' | endif
+au VimEnter * if &diff | execute 'windo set nowrap' | endif
 
 set paste
