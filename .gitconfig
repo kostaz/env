@@ -18,4 +18,4 @@
 [alias]
 	d = difftool
 [core]
-	editor = vim -f
+	editor = gvim -f
