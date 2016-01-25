@@ -26,6 +26,7 @@ sudo apt-get install -y gawk:i386 && \
 sudo apt-get install -y tree && \
 sudo apt-get install -y vim && \
 sudo apt-get install -y vim-gtk && \
+sudo apt-get install -y geany && \
 sudo apt-get install -y cscope && \
 sudo apt-get install -y exuberant-ctags && \
 sudo apt-get install -y sysstat && \
@@ -45,6 +46,7 @@ sudo apt-get install -y chrpath && \
 sudo apt-get install -y build-essential && \
 sudo apt-get install -y axel && \
 sudo apt-get install -y mc && \
+sudo apt-get install -y gddrescue && \
 sudo apt-get install -y autotools-dev && \
 sudo apt-get install -y autoconf && \
 sudo apt-get install -y cmake && \
