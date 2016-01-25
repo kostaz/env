@@ -13,6 +13,8 @@ sudo apt-get install -y unicode
 
 # no need: sudo cp /usr/lib/i386-linux-gnu/libicu* /lib/i386-linux-gnu/
 # copy libxml2.so from somebody to /usr/lib/i386-linux-gnu
+# find . -name "libxml*so*"
+# find . -name "libxml*so*" | xargs ls -lsa
 # sudo ln -s libxml2.so.2.9.1 libxml2.so
 # sudo ln -s libxml2.so.2.9.1 libxml2.so.2
 # cd /usr/lib/i386-linux-gnu
