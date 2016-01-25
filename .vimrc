@@ -596,6 +596,10 @@ set smarttab
 set listchars=tab:>-
 set nolist
 
+" highlight word on double click
+" http://stackoverflow.com/questions/6876850/how-to-highlight-all-occurrences-of-a-word-in-vim-on-double-clicking
+map <2-LeftMouse> #*
+
 map <F9> :TlistToggle<CR>
 map <F7> :call ToggleShowWhitespace()<CR>
 map <F8> :set list!<CR>
