@@ -648,3 +648,5 @@ set linespace=3
 au VimEnter * if &diff | execute 'windo set nowrap' | endif
 
 set paste
+
+set number
