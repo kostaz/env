@@ -602,5 +602,7 @@ map <F8> :set list!<CR>
 
 set printoptions=paper:A4
 
+set mouse=a
+
 nmap <leader>va :set mouse=a<cr>
 nmap <leader>vv :set mouse=v<cr>
