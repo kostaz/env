@@ -643,6 +643,8 @@ set nofoldenable
 " Ack search (like grep)
 nmap <leader>a :Ack<cr>
 
+set printoptions=paper:A4
+
 set linespace=3
 
 au VimEnter * if &diff | execute 'windo set nowrap' | endif
