@@ -26,6 +26,7 @@ sudo apt-get install -y gawk:i386 && \
 sudo apt-get install -y tree && \
 sudo apt-get install -y vim && \
 sudo apt-get install -y vim-gtk && \
+sudo apt-get install -y emacs && \
 sudo apt-get install -y geany && \
 sudo apt-get install -y cscope && \
 sudo apt-get install -y exuberant-ctags && \
