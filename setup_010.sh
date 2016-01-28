@@ -60,6 +60,7 @@ sudo apt-get install -y openssh-server && \
 sudo apt-get install -y libwrap0-dev && \
 sudo apt-get install -y openjdk-8-jre && \
 sudo apt-get install -y tmux && \
+sudo apt-get install -y byobu && \
 sudo apt-get install -y cifs-utils && \
 sudo apt-get install -y htop && \
 sudo apt-get install -y ranger && \
