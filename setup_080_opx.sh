@@ -29,3 +29,15 @@ sudo apt-get install -y unicode
 # on ~line 27
 # OR:
 # install libxml2:i386 version 2.9.1
+
+# Two things should be done to enable OPX-kernel and OPX BCM SDK
+# compilation on Ubuntu 14.04 64-bit:
+# ================================================================================
+sudo dpkg --add-architecture i386 && \
+sudo apt-get update && \
+sudo apt-get install gcc-multilib && \
+sudo apt-get install lib32gcc-4.8-dev && \
+sudo apt-get install libc6-i386 && \
+sudo apt-get install libc6-dev-i386
+# Also patch OP-X SDK:
+# Use the attached "0001-Fix-Enable-kernel-and-BCM-SDK-compilation-on-Ubuntu-.patch" file
