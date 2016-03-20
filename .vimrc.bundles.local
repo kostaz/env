@@ -1,0 +1,16 @@
+Bundle 'vim-scripts/cscope.vim'
+Bundle 'steffanc/cscopemaps.vim'
+Bundle 'jeetsukumaran/vim-buffergator'
+
+UnBundle 'klen/python-mode'
+UnBundle 'yssource/python.vim'
+UnBundle 'python_match.vim'
+UnBundle 'pythoncomplete'
+
+let g:spf13_no_autochdir=1
+let g:spf13_no_views=1
+
+set tabstop=8
+set noexpandtab
+set shiftwidth=8
+set smarttab

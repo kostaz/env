@@ -1,0 +1,41 @@
+" highlight word on double click
+" http://stackoverflow.com/questions/6876850/how-to-highlight-all-occurrences-of-a-word-in-vim-on-double-clicking
+map <2-LeftMouse> #*
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable to switch between visual and all mouse modes.
+"
+set mouse=a
+
+nmap <leader>va :set mouse=a<cr>
+nmap <leader>vv :set mouse=v<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fix printer
+"
+set printoptions=paper:A4
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Font and color
+"
+set guifont=Ubuntu\ Mono\ 17
+color default
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tab settings
+"
+set tabstop=8
+set noexpandtab
+set shiftwidth=8
+set smarttab
+
+set linespace=5
+
+set nospell
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Notes: based on vim spf13
+" https://github.com/spf13/spf13-vim
+" http://vim.spf13.com/
+
+let NERDTreeQuitOnOpen = 0
