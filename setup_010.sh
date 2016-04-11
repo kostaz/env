@@ -63,6 +63,7 @@ sudo apt-get install -y tmux && \
 sudo apt-get install -y byobu && \
 sudo apt-get install -y cifs-utils && \
 sudo apt-get install -y htop && \
+sudo apt-get install -y valgrind && \
 sudo apt-get install -y ranger && \
 sudo apt-get install -y xterm && \
 sudo apt-get install -y putty && \
