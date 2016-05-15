@@ -20,6 +20,7 @@ sudo apt-get install -y git-svn && \
 sudo apt-get install -y tig && \
 sudo apt-get install -y subversion && \
 sudo apt-get install -y tkcvs && \
+sudo apt-get install -y ack-grep && \
 sudo apt-get install -y autoconf && \
 sudo apt-get install -y make && \
 sudo apt-get install -y gawk:i386 && \
