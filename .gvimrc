@@ -645,10 +645,13 @@ nmap <leader>a :Ack<cr>
 
 set printoptions=paper:A4
 
-set linespace=3
+set linespace=7
 
 au VimEnter * if &diff | execute 'windo set nowrap' | endif
 
 set paste
 
 set number
+set nowrapscan
+
+nnoremap <silent> <Esc><Esc> :qa<CR>
