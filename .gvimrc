@@ -652,6 +652,6 @@ au VimEnter * if &diff | execute 'windo set nowrap' | endif
 set paste
 
 set number
-set nowrapscan
 
 nnoremap <silent> <Esc><Esc> :qa<CR>
+nnoremap <silent> <Esc><Esc><Esc> :qa!<CR>
