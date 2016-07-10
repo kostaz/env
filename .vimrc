@@ -215,7 +215,7 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indet
-set wrap "Wrap lines
+set nowrap "Wrap lines
 
 
 """"""""""""""""""""""""""""""
