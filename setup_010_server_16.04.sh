@@ -65,6 +65,13 @@ sudo apt-get install -y xterm && \
 sudo apt-get install -y gcc-5-base:i386 && \
 sudo apt-get install -y gcc-multilib && \
 sudo apt-get install -y libc6-dev:i386 && \
+sudo apt-get install -y binutils && \
+sudo apt-get install -y linux-libc-dev && \
+sudo apt-get install -y libc-dev-bin  && \
+sudo apt-get install -y libc6-dev && \
+sudo apt-get install -y libc6-dev-i386  && \
+sudo apt-get install -y libncurses5:i386 && \
+sudo apt-get install -y libncurses5-dev:i386 && \
 sudo dpkg --add-architecture i386 && \
 sudo apt-get update  -y && \
 sudo apt-get install -y lib32z1 && \
