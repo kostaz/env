@@ -188,6 +188,12 @@ function f()
 	find . -iname "*${term}*"
 }
 
+function sf()
+{
+	term=$@
+	find . -name "${term}"
+}
+
 function g()
 {
 	term=$@
