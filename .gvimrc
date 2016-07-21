@@ -612,7 +612,7 @@ map <leader>h :GrepBuffer -i expand("<cword>")<CR>
 
 set cursorline
 " set nowrap
-set nowrap
+set wrap
 
 set lines=999 columns=999
 
