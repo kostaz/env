@@ -137,7 +137,8 @@ PS1="\n[\[\u@\H] [\w]\n\n"
 # PS1="[ ~~~~~~~~ \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h ~~~~~~~~ ]\w\$ "
 
 alias mkfind='find . -type f \
-                     -iname "*makefile*" -o \
+		     -iname "*make*" -o     \
+		     -iname "*makefile*" -o \
 		     -iname "*kconfig*"  -o \
 		     -iname "*.mk" | xargs grep -inH --color=auto '
 
