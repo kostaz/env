@@ -142,6 +142,12 @@ alias mkfind='find . -type f \
 		     -iname "*kconfig*"  -o \
 		     -iname "*.mk" | xargs grep -inH --color=auto '
 
+alias smkfind='find . -type f \
+		      -iname "*make*" -o     \
+		      -iname "*makefile*" -o \
+		      -iname "*kconfig*"  -o \
+		      -iname "*.mk" | xargs grep -nH --color=auto '
+
 alias kfind='find . -iname "*kconfig*" | xargs grep -inH --color=auto '
 
 alias chsfind='find . -iname "*.[chs]" | xargs grep --color=auto -inH '
