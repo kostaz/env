@@ -176,6 +176,7 @@ alias gdc='git diff --cached --ignore-all-space '
 alias gdcI='git diff --cached '
 alias gd='git diff --ignore-all-space '
 alias gdI='git diff '
+alias gdt='git difftool '
 alias ga='git add '
 alias gb='git branch'
 
