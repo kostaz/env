@@ -82,6 +82,7 @@ sudo ln -s /usr/bin/make /usr/bin/gmake && \
 # Useful utilities
 # ================================================================================
 sudo apt-get install -y ncdu && \
+sudo apt-get install -y pandoc && \
 
 # TFTP server
 # ================================================================================
