@@ -23,3 +23,11 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+[sendemail]
+	from = Kosta Zertsekel <zertsekel@gmail.com>
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = zertsekel@gmail.com
+	chainreplyto = false
+	smtpServerPort = 587
+	confirm = auto
