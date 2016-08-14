@@ -136,17 +136,23 @@ PS1="\n[\[\u@\H] [\w]\n\n"
 # \[\033[0;32m\]\[\033[1;30m\]] \n\[\033[1;36m\]\w \n\$ "
 # PS1="[ ~~~~~~~~ \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h ~~~~~~~~ ]\w\$ "
 
-alias mkfind='find . -type f \
-		     -iname "*make*" -o     \
-		     -iname "*makefile*" -o \
-		     -iname "*kconfig*"  -o \
-		     -iname "*.mk" | xargs grep -inH --color=auto '
+alias mkfind='find .  -type f \
+		      -iname "*make*" -o     \
+		      -iname "*makefile*" -o \
+		      -iname "*kconfig*"  -o \
+		      -iname "*.mk" | xargs grep -inH --color=auto '
 
 alias smkfind='find . -type f \
 		      -iname "*make*" -o     \
 		      -iname "*makefile*" -o \
 		      -iname "*kconfig*"  -o \
 		      -iname "*.mk" | xargs grep -nH --color=auto '
+
+alias bashfind='find .  -type f \
+		        -iname "*.sh" | sort | xargs grep -inH --color=auto '
+
+alias sbashfind='find . -type f \
+		        -iname "*.sh" | sort | xargs grep -inH --color=auto '
 
 alias kfind='find . -iname "*kconfig*" | xargs grep -inH --color=auto '
 
