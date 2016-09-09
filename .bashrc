@@ -178,7 +178,6 @@ alias shfind='find . -iname "*.[h]" | xargs grep --color=auto -nH '
 alias gg='git grep -in --untracked '
 alias sgg='git grep -n --untracked '
 alias gs='git status'
-alias gss='git status -uno -s'
 alias gdc='git diff --cached --ignore-all-space '
 alias gdcI='git diff --cached '
 alias gd='git diff --ignore-all-space '
@@ -188,10 +187,12 @@ alias ga='git add '
 alias gb='git branch'
 
 # repo aliases
-alias rs='repo forall -c git status'
-alias rb='repo forall -c git branch'
-alias rd='repo forall -c git diff'
-alias ra='repo forall -c '
+alias rs='repo status'
+
+alias rfs='repo forall -c git status'
+alias rfb='repo forall -c git branch'
+alias rfd='repo forall -c git diff'
+alias rfa='repo forall -c '
 
 # clear screen for real
 # http://stackoverflow.com/questions/5367068/clear-the-ubuntu-bash-screen-for-real
