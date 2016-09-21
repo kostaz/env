@@ -207,7 +207,7 @@ function f()
 function sf()
 {
 	term=$@
-	find . -name "${term}"
+	find . -name "*${term}*"
 }
 
 function g()
