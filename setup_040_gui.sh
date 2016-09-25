@@ -11,4 +11,9 @@ sudo apt-get install -y kazam && \
 sudo apt-get install -y kdiff3 && \
 sudo apt-get install -y chromium-browser && \
 sudo apt-get install -y flashplugin-installer && \
-sudo apt-get install -y adobe-flashplugin
+sudo apt-get install -y adobe-flashplugin && \
+sudo apt-get install -y eclipse && \
+sudo apt-get install -y eclipse-cdt && \
+sudo apt-get install -y eclipse-cdt-launch-remote && \
+sudo apt-get install -y eclipse-cdt-valgrind && \
+sudo apt-get install -y eclipse-egit
