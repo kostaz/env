@@ -7,6 +7,7 @@ sudo apt-get install -y shutter && \
 sudo apt-get install -y mypaint && \
 sudo apt-get install -y gnome-calculator && \
 sudo apt-get install -y meld && \
+sudo apt-get install -y remmina && \
 sudo apt-get install -y kazam && \
 sudo apt-get install -y kdiff3 && \
 sudo apt-get install -y chromium-browser && \
