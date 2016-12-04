@@ -45,7 +45,6 @@ sudo apt-get install -y axel && \
 sudo apt-get install -y mc && \
 sudo apt-get install -y gddrescue && \
 sudo apt-get install -y autotools-dev && \
-sudo apt-get install -y autoconf && \
 sudo apt-get install -y cmake && \
 sudo apt-get install -y pdfgrep && \
 sudo apt-get install -y pkg-config && \
