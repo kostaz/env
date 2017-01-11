@@ -655,3 +655,7 @@ set number
 
 nnoremap <silent> <Esc><Esc> :qa<CR>
 nnoremap <silent> <Esc><Esc><Esc> :qa!<CR>
+
+" Make shift-insert work like in Xterm
+set nopaste
+map <S-Insert> <MiddleMouse>
