@@ -79,6 +79,7 @@ sudo apt-get install -y ncdu && \
 sudo apt-get install -y xinetd && \
 sudo apt-get install -y tftpd && \
 sudo apt-get install -y tftp && \
+sudo apt-get install -y ncftp # ncftp -u pavel -p 123456 194.90.136.1
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "!!!"
