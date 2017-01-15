@@ -13,6 +13,7 @@ sleep 3
 # ================================================================================
 sudo apt-get install -y flex && \
 sudo apt-get install -y bison && \
+sudo apt-get install -y libreadline6 libreadline6-dev \
 sudo apt-get install -y expect && \
 sudo apt-get install -y gettext && \
 sudo apt-get install -y git && \
