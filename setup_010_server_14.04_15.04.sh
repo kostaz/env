@@ -14,6 +14,7 @@ sleep 3
 sudo apt-get install -y flex && \
 sudo apt-get install -y bison && \
 sudo apt-get install -y libtool libtool-bin && \
+sudo apt-get install -y libxml2 libxml2-dev && \
 sudo apt-get install -y libreadline6 libreadline6-dev && \
 sudo apt-get install -y expect && \
 sudo apt-get install -y gettext && \
