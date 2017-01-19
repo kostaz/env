@@ -11,6 +11,8 @@ sleep 3
 
 # Setup needed programs and utilities
 # ================================================================================
+sudo dpkg --add-architecture i386 && \
+sudo apt-get update  -y && \
 sudo apt-get install -y flex && \
 sudo apt-get install -y bison && \
 sudo apt-get install -y libtool libtool-bin && \
@@ -75,8 +77,6 @@ sudo apt-get install -y libc6-dev && \
 sudo apt-get install -y libc6-dev-i386  && \
 sudo apt-get install -y libncurses5:i386 && \
 sudo apt-get install -y libncurses5-dev:i386 && \
-sudo dpkg --add-architecture i386 && \
-sudo apt-get update  -y && \
 sudo apt-get install -y lib32z1 && \
 sudo apt-get install -y lib32ncurses5 && \
 sudo rm -f /usr/bin/gmake && \

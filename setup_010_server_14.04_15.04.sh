@@ -11,6 +11,8 @@ sleep 3
 
 # Setup needed programs and utilities
 # ================================================================================
+sudo dpkg --add-architecture i386 && \
+sudo apt-get update  -y && \
 sudo apt-get install -y flex && \
 sudo apt-get install -y bison && \
 sudo apt-get install -y libtool libtool-bin && \
@@ -65,8 +67,6 @@ sudo apt-get install -y htop && \
 sudo apt-get install -y valgrind && \
 sudo apt-get install -y ranger && \
 sudo apt-get install -y xterm && \
-sudo dpkg --add-architecture i386 && \
-sudo apt-get update  -y && \
 sudo apt-get install -y lib32z1 && \
 sudo apt-get install -y lib32ncurses5 && \
 sudo rm -f /usr/bin/gmake && \
