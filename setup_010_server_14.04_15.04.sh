@@ -13,6 +13,7 @@ sleep 3
 # ================================================================================
 sudo dpkg --add-architecture i386 && \
 sudo apt-get update  -y && \
+sudo apt-get install -y bc && \
 sudo apt-get install -y flex && \
 sudo apt-get install -y bison && \
 sudo apt-get install -y libtool libtool-bin && \
