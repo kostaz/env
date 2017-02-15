@@ -28,7 +28,7 @@ sudo apt-get install -y subversion && \
 sudo apt-get install -y ack-grep && \
 sudo apt-get install -y autoconf && \
 sudo apt-get install -y make && \
-sudo apt-get install -y gawk:i386 && \
+sudo apt-get install -y gawk && \
 sudo apt-get install -y tree && \
 sudo apt-get install -y vim && \
 sudo apt-get install -y cscope && \
