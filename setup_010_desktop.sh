@@ -19,6 +19,7 @@ sudo apt-get install -y geany && \
 sudo apt-get install -y putty && \
 sudo apt-get install -y krusader && \
 sudo apt-get install -y gcal && \
+sudo apt-get install -y compizconfig-settings-manager && \
 
 # Fonts
 # ================================================================================
