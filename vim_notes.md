@@ -17,15 +17,15 @@ Inside vim
 
 Install new plugin
 ==================
- * Add line in ~/.vimrc Plugin "postfix of github project path"
+ * Add line in `~/.vimrc` Plugin "postfix of github project path"
  * Reenter vim (or run `:source ~/.vimrc`)
- * PluginInstall
+ * `:PluginInstall`
 
 Uninstall vim plugin
 ====================
- * Revome "Plugin ..." line (or comment) from ~/.vimrc
+ * Revome "Plugin ..." line (or comment) from `~/.vimrc`
  * Reenter vim (or run `:source ~/.vimrc`)
- * PluginClean
+ * `:PluginClean`
 
 Installing vim on fresh PC
 ==========================
@@ -38,4 +38,4 @@ Diff files
  * Diff two files: `gvimdiff <file1> <file2>`
  * Diff directories:
     - Open gvim
-    - :DirDiff <dir1> <dir2>
+    - `:DirDiff <dir1> <dir2>`
