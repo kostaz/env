@@ -30,6 +30,7 @@ sudo apt-get install -y autoconf && \
 sudo apt-get install -y make && \
 sudo apt-get install -y gawk && \
 sudo apt-get install -y tree && \
+sudo apt-get install -y unrar && \
 sudo apt-get install -y vim && \
 sudo apt-get install -y cscope && \
 sudo apt-get install -y exuberant-ctags && \
