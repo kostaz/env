@@ -16,7 +16,8 @@ alias bashfind='find .  -type f \
 alias sbashfind='find . -type f \
 		        -iname "*.sh" | sort | xargs grep -inH --color=auto '
 
-alias kfind='find . -iname "*kconfig*" | xargs grep -inH --color=auto '
+alias kfind='find . -type f \
+	            -iname "*kconfig*" | xargs grep -inH --color=auto '
 
 alias chsfind='find . -iname "*.[chs]" | xargs grep --color=auto -inH '
 alias schsfind='find . -iname "*.[chs]" | xargs grep --color=auto -nH '
@@ -33,28 +34,13 @@ alias schfind='find . -iname "*.[ch]" | xargs grep --color=auto -nH '
 alias hfind='find . -iname "*.[h]" | xargs grep --color=auto -inH '
 alias noncfind='find . -not -iname "*[chs]" | xargs grep -inH --color=auto '
 alias ofind='find . -iname "*.[o]" | xargs grep --color=auto -inH '
+alias ofindI='find . -iname "*.[o]" | xargs grep --color=auto -nH '
 alias sfind='find . -iname "*.[s]" | xargs grep --color=auto -inH '
 alias shfind='find . -iname "*.[h]" | xargs grep --color=auto -nH '
 
-# git aliases
-alias gg='git grep -in --untracked '
-alias sgg='git grep -n --untracked '
-alias gs='git status'
-alias gdc='git diff --cached --ignore-all-space '
-alias gdcI='git diff --cached '
-alias gd='git diff --ignore-all-space '
-alias gdI='git diff '
-alias gdt='git difftool '
-alias ga='git add '
-alias gb='git branch'
-
-# repo aliases
-alias rs='repo status'
-
-alias rfs='repo forall -c git status'
-alias rfb='repo forall -c git branch'
-alias rfd='repo forall -c git diff'
-alias rfa='repo forall -c '
+alias gdt='git difftool -- '
+alias gg='git grep --ignore-case '
+alias ggI='git grep '
 
 # clear screen for real
 # http://stackoverflow.com/questions/5367068/clear-the-ubuntu-bash-screen-for-real
@@ -66,10 +52,10 @@ function f()
 	find . -iname "*${term}*"
 }
 
-function ff()
+function f1()
 {
 	term=$@
-	find . -type f -iname "*${term}*"
+	find . -maxdepth 1 -iname "*${term}*"
 }
 
 function sf()
@@ -78,8 +64,35 @@ function sf()
 	find . -name "*${term}*"
 }
 
+function ff()
+{
+	term=$@
+	find . -not -type d -iname "*${term}*"
+}
+
+function fd()
+{
+	term=$@
+	find . -type d -iname "*${term}*"
+}
+
 function sff()
 {
 	term=$@
-	find . -type f -name "*${term}*"
+	find . -not -type d -name "*${term}*"
 }
+
+function g()
+{
+	term=$@
+	grep --color=auto -irnH "${term}"
+}
+
+alias vims='[[ -e "Session.vim" ]] && vim -S Session.vim || vim'
+alias gvims='[[ -e "Session.vim" ]] && gvim -S Session.vim || gvim'
+
+export EDITOR=vim
+export VISUAL=vim
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
