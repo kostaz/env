@@ -4,6 +4,7 @@
 # ================================================================================
 sudo apt-get install -y gnome-disk-utility && \
 sudo apt-get install -y shutter && \
+sudo apt-get install -y inkscape && \
 sudo apt-get install -y mypaint && \
 sudo apt-get install -y gnome-calculator && \
 sudo apt-get install -y meld && \
