@@ -42,7 +42,6 @@ Plugin 'sheerun/vim-polyglot'
 " http://vimcolors.com
 Plugin 'muellan/am-colors'
 Plugin 'albertorestifo/github.vim'
-Plugin 'encody/nvim'
 
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'shougo/unite.vim'
