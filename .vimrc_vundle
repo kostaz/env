@@ -40,14 +40,16 @@ Plugin 'othree/html5.vim'
 Plugin 'sheerun/vim-polyglot'
 
 " http://vimcolors.com
-Plugin 'robertmeta/nofrils'
 Plugin 'muellan/am-colors'
 Plugin 'albertorestifo/github.vim'
-Plugin 'atelierbram/vim-colors_atelier-schemes'
+Plugin 'encody/nvim'
 
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'vim-scripts/MultipleSearch'
 Plugin 'shougo/unite.vim'
+
+Plugin 'altercation/vim-colors-solarized'
+
+Plugin 'joeytwiddle/vim-diff-traffic-lights-colors'
 
 " Plugin 'jeetsukumaran/vim-buffergator'
 
@@ -213,7 +215,7 @@ nmap <leader>vv :set mouse=v<cr>
 nnoremap <silent> <Esc><Esc> :qa<CR>
 nnoremap <silent> <Esc><Esc><Esc> :qa!<CR>
 
-set guifont=Ubuntu\ Mono\ 18
+set guifont=Ubuntu\ Mono\ 15
 " set guioptions+=b " Horizontal scripts bar
 set guioptions=agilrv " Default agimrLtT
 colorscheme default
@@ -331,3 +333,33 @@ map <F5> :!cscope -Rbk<CR>:cs reset<CR><CR>
 " Map Control-Backspace to delete previous word
 " http://vim.wikia.com/wiki/Map_Ctrl-Backspace_to_delete_previous_word
 imap <C-BS> <C-W>
+
+" ******************************************************************************
+" Copy-Paste like in main stream applications
+"
+" http://vim.wikia.com/wiki/Cut/copy_and_paste_using_visual_selection
+map <C-c> "+y<CR>
+
+" Select all text
+nmap <C-a> ggVG
+
+" ******************************************************************************
+" Copy file name, file path to system clipboard
+" https://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim
+
+" copy current file name (relative/absolute) to system clipboard (Linux version)
+" using `@+` register and to vim clipboard using `@"` register
+
+if has("gui_gtk") || has("gui_gtk2") || has("gui_gnome") || has("unix")
+    " relative path (src/foo.txt)
+    nnoremap <leader>cf :let @+=expand("%")<CR>:let @"=expand("%")<CR>
+
+    " absolute path (/something/src/foo.txt)
+    nnoremap <leader>cF :let @+=expand("%:p")<CR>
+
+    " filename (foo.txt)
+    nnoremap <leader>ct :let @+=expand("%:t")<CR>
+
+    " directory name (/something/src)
+    nnoremap <leader>ch :let @+=expand("%:p:h")<CR>
+endif
