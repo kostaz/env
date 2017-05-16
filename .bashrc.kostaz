@@ -92,6 +92,7 @@ function g()
 }
 
 alias ag='ag -t --hidden -i '
+alias ll='ls -lha'
 
 alias vims='[[ -e "Session.vim" ]] && vim -S Session.vim || vim'
 alias gvims='[[ -e "Session.vim" ]] && gvim -S Session.vim || gvim'
