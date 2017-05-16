@@ -91,6 +91,8 @@ function g()
 	grep --color=auto -irnH "${term}"
 }
 
+alias ag='ag -t --hidden -i '
+
 alias vims='[[ -e "Session.vim" ]] && vim -S Session.vim || vim'
 alias gvims='[[ -e "Session.vim" ]] && gvim -S Session.vim || gvim'
 
