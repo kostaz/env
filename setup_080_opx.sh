@@ -35,9 +35,9 @@ sudo apt-get install -y unicode
 # ================================================================================
 sudo dpkg --add-architecture i386 && \
 sudo apt-get update && \
-sudo apt-get install gcc-multilib && \
-sudo apt-get install lib32gcc-4.8-dev && \
-sudo apt-get install libc6-i386 && \
-sudo apt-get install libc6-dev-i386
+sudo apt-get install -y gcc-multilib && \
+sudo apt-get install -y lib32gcc-4.8-dev && \
+sudo apt-get install -y libc6-i386 && \
+sudo apt-get install -y libc6-dev-i386
 # Also patch OP-X SDK:
 # Use the attached "0001-Fix-Enable-kernel-and-BCM-SDK-compilation-on-Ubuntu-.patch" file
