@@ -23,6 +23,8 @@ sudo apt-get install -y expect && \
 sudo apt-get install -y gettext && \
 sudo apt-get install -y git && \
 sudo apt-get install -y stgit && \
+sudo apt-get install -y gperf && \
+sudo apt-get install -y help2man && \
 sudo apt-get install -y git-svn && \
 sudo apt-get install -y tig && \
 sudo apt-get install -y subversion && \
