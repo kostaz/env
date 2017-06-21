@@ -91,7 +91,15 @@ function g()
 	grep --color=auto -irnH "${term}"
 }
 
+function c()
+{
+	term=$@
+	cd "${term}"
+	ls -lsa
+}
+
 alias ag='ag -t --hidden -i '
+alias ags='ag -t --hidden '
 alias ll='ls -lha'
 alias ltr='ls -lsatr'
 alias lr='cls ; ls -lastr | tail'
