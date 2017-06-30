@@ -72,6 +72,7 @@ sudo apt-get install -y ethtool && \
 sudo apt-get install -y htop && \
 sudo apt-get install -y valgrind && \
 sudo apt-get install -y ranger && \
+sudo apt-get install -y glances && \
 sudo apt-get install -y xterm && \
 sudo apt-get install -y gcc-5-base:i386 && \
 sudo apt-get install -y gcc-multilib && \
