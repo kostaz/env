@@ -8,5 +8,5 @@ sudo apt-get install -y git-email
 
 # Git LFS
 # https://github.com/github/git-lfs/wiki/Installation
-sudo apt-get update
-sudo apt-get install python-software-properties
+sudo apt-get update  -y
+sudo apt-get install -y python-software-properties
