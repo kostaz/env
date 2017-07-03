@@ -11,10 +11,11 @@ sudo apt-get install -y meld && \
 sudo apt-get install -y remmina && \
 sudo apt-get install -y kazam && \
 sudo apt-get install -y kdiff3 && \
-sudo apt-get install -y chromium-browser && \
-sudo apt-get install -y flashplugin-installer && \
-sudo apt-get install -y eclipse && \
-sudo apt-get install -y eclipse-cdt && \
-sudo apt-get install -y eclipse-cdt-launch-remote && \
-sudo apt-get install -y eclipse-cdt-valgrind && \
-sudo apt-get install -y eclipse-egit
+sudo apt-get install -y chromium-browser
+
+sudo apt-get install -y flashplugin-installer
+
+# Telegram
+sudo add-apt-repository -y ppa:atareao/telegram
+sudo apt-get update     -y
+sudo apt-get install    -y telegram
