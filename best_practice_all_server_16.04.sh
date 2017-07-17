@@ -9,6 +9,7 @@
 ./setup_021_git.sh
 ./setup_011_bashrc.sh
 ./setup_010_server_16.04.sh
+./setup_150_smarts.sh
 ./setup_080_opx.sh
 ./setup_110_golang.sh
 ./setup_012_clang_silversearcher.sh
