@@ -10,10 +10,13 @@ sudo apt-get install -y build-essential devscripts debhelper && \
 sudo apt-get install -y libicu-dev && \
 sudo apt-get install -y libicu-dev:i386 && \
 sudo apt-get install -y unicode
+sudo apt-get install -y libc6-dev-i386
 
-sudo apt-get install openhpi
-sudo apt-get install libglib2.0-0 libglib2.0-bin libglib2.0-dev libglib2.0-doc
-sudo apt-get install libglib2.0-0:i386
+sudo apt-get install -y openhpi
+sudo apt-get install -y libglib2.0-0 libglib2.0-bin libglib2.0-dev libglib2.0-doc
+sudo apt-get install -y libglib2.0-0:i386
+
+sudo apt-get install -y libncurses5:i386
 
 # no need: sudo cp /usr/lib/i386-linux-gnu/libicu* /lib/i386-linux-gnu/
 # copy libxml2.so from somebody to /usr/lib/i386-linux-gnu
