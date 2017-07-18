@@ -10,7 +10,7 @@
 	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
 	trustExitCode = true
 [diff]
-	tool = gvimdiff
+	tool = vimdiff
 [difftool "diffmerge"]
 	cmd = diffmerge $LOCAL $REMOTE
 [difftool]
@@ -18,7 +18,7 @@
 [alias]
 	d = difftool
 [core]
-	editor = gvim -f
+	editor = vim -f
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
