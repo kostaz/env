@@ -31,3 +31,6 @@
 	chainreplyto = false
 	smtpServerPort = 587
 	confirm = auto
+[oh-my-zsh]
+	hide-status = 0
+	hide-dirty = 1
