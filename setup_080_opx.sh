@@ -2,19 +2,31 @@
 
 # Setup needed programs and utilities
 # ================================================================================
-sudo apt-get install -y ffmpeg && \
-sudo apt-get install -y zlib1g-dev zlib1g-dev:i386 && \
-sudo apt-get install -y libxml2-dev libssh2-1-dev libncurses5-dev libgcrypt-dev && \
-sudo apt-get install -y libxml2:i386 && libxml2-dev:i386 \
-sudo apt-get install -y build-essential devscripts debhelper && \
-sudo apt-get install -y libicu-dev && \
-sudo apt-get install -y libicu-dev:i386 && \
+sudo apt-get install -y zlib1g-dev
+sudo apt-get install -y zlib1g-dev:i386
+
+sudo apt-get install -y libssh2-1-dev libncurses5-dev libgcrypt-dev
+
+sudo apt-get install -y libxml2-dev
+sudo apt-get install -y libxml2-dev:i386
+
+sudo apt-get install -y libxml2
+sudo apt-get install -y libxml2:i386
+
+sudo apt-get install -y build-essential devscripts debhelper
+
+sudo apt-get install -y libicu-dev
+sudo apt-get install -y libicu-dev:i386
+
 sudo apt-get install -y unicode
 sudo apt-get install -y libc6-dev-i386
 
 sudo apt-get install -y openhpi
-sudo apt-get install -y libglib2.0-0 libglib2.0-bin libglib2.0-dev libglib2.0-doc
-sudo apt-get install -y libglib2.0-0:i386
+
+sudo apt-get install -y libglib2.0-0
+sudo apt-get install -y libglib2.0-bin
+sudo apt-get install -y libglib2.0-dev
+sudo apt-get install -y libglib2.0-doc
 
 sudo apt-get install -y libncurses5:i386
 
