@@ -110,7 +110,7 @@ function c()
 }
 
 alias ag='ag -t --hidden -i '
-alias ags='ag -t --hidden -s '
+alias agI='ag -t --hidden -s '
 alias ll='ls -lha'
 alias ltr='ls -lsatr'
 alias lr='cls ; ls -lastr | tail'
