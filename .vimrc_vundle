@@ -22,7 +22,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'fatih/vim-go'
 Plugin 'rogpeppe/godef'
-Plugin 'nsf/gocode'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'vim-scripts/Printer-Dialog'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'jiangmiao/auto-pairs'
