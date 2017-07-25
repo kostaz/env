@@ -50,7 +50,7 @@ alias gsi='git show --ignore-all-space'
 alias gdI='git diff'
 alias gdc='git diff --cached --ignore-all-space'
 alias gdcI='git diff --cached'
-alias gdt='git difftool -- '
+alias gdt='git difftool '
 
 alias gg='git grep --ignore-case '
 alias ggI='git grep '
