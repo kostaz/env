@@ -20,3 +20,5 @@ sudo apt-get install -y flashplugin-installer
 sudo add-apt-repository -y ppa:atareao/telegram
 sudo apt-get update     -y
 sudo apt-get install    -y telegram
+
+sudo apt-get install    -y deluge
