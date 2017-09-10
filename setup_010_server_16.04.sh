@@ -72,6 +72,7 @@ sudo apt-get install -y ethtool && \
 sudo apt-get install -y wireless-tools && \
 sudo apt-get install -y wpasupplicant && \
 sudo apt-get install -y htop && \
+sudo apt-get install -y pdftk && \
 sudo apt-get install -y valgrind && \
 sudo apt-get install -y ranger && \
 sudo apt-get install -y glances && \
