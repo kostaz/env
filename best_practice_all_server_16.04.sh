@@ -9,6 +9,7 @@
 ./setup_021_git.sh
 ./setup_011_bashrc.sh
 ./setup_010_server_16.04.sh
+./setup_030_server_manual.sh
 ./setup_150_smarts.sh
 ./setup_080_opx.sh
 ./setup_110_golang.sh
