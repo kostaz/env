@@ -18,6 +18,8 @@
 ./setup_120_zsh.sh # has to be last
 
 # ./setup_013_fzf_manual.sh
-# update ~/.zshrc with source ~/.bashrc.kostaz
+# update ~/.zshrc with:
+# 1) source ~/.bashrc.kostaz
+# 2) DISABLE_AUTO_TITLE="true" (to keep byobu tab name)
 # vim ~/.vimrc and PluginInstall
 # reboot
