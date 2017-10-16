@@ -202,6 +202,7 @@ nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\
 " nnoremap <silent> <LeftMouse> <LeftMouse>:let @/='\V\<'.escape(expand('<cword>'), '\').'\>'<cr>:set hls<cr>
 
 map <F9> :set list!<CR>
+nmap <leader>ss :set list!<cr>
 
 set printoptions=paper:A4
 
@@ -303,8 +304,10 @@ nmap <leader>g :Ack <c-r>=expand("<cword>")<cr><CR>
 nmap <leader>a :Ag <c-r>=expand("<cword>")<cr><CR>
 
 nmap <F8> :TagbarToggle<CR>
+nmap <leader>tt :TagbarToggle<cr>
 
 nmap <F6> :set wrap!<cr>
+nmap <leader>sw :set wrap!<cr>
 
 let g:tagbar_type_cpp = {
     \ 'kinds' : [
@@ -328,6 +331,7 @@ if has("autocmd")
 endif
 
 map <F5> :!cscope -Rbk<CR>:cs reset<CR><CR>
+nmap <leader>cs :!cscope -Rbk<CR>:cs reset<CR><CR>
 
 " Map Control-Backspace to delete previous word
 " http://vim.wikia.com/wiki/Map_Ctrl-Backspace_to_delete_previous_word
