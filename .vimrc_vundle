@@ -50,6 +50,8 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'joeytwiddle/vim-diff-traffic-lights-colors'
 
+Plugin 'bling/vim-airline'
+
 " Plugin 'jeetsukumaran/vim-buffergator'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
