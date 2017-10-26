@@ -84,6 +84,12 @@ function ff()
 	find . -not -type d -iname "*${term}*"
 }
 
+function ff1()
+{
+	term=$@
+	find . -maxdepth 1 -not -type d -iname "*${term}*" | sort
+}
+
 function fd()
 {
 	term=$@
