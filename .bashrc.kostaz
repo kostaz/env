@@ -41,19 +41,19 @@ alias shfind='find . -iname "*.[h]" | xargs grep --color=auto -nH '
 #
 # Git most useful commands
 #
-alias gs='git status'
-alias gb='git branch'
-alias ga='git add'
-alias gd='git diff --ignore-all-space'
+alias gs='git status --color=always'
+alias gb='git branch --color=always'
+alias ga='git add --color=always'
+alias gd='git diff --ignore-all-space --color=always'
 
-alias gsi='git show --ignore-all-space'
-alias gdI='git diff'
-alias gdc='git diff --cached --ignore-all-space'
-alias gdcI='git diff --cached'
+alias gsi='git show --ignore-all-space --color=always'
+alias gdI='git diff --color=always'
+alias gdc='git diff --cached --ignore-all-space --color=always'
+alias gdcI='git diff --cached --color=always'
 alias gdt='git difftool '
 
-alias gg='git grep --ignore-case '
-alias ggI='git grep '
+alias gg='git grep --ignore-case --color=always '
+alias ggI='git grep --color=always '
 
 #
 # clear screen for real
@@ -109,8 +109,8 @@ function c()
 	ls -lsa
 }
 
-alias ag='ag -t --hidden -i '
-alias agI='ag -t --hidden -s '
+alias ag='ag -t --hidden -i --color=always '
+alias agI='ag -t --hidden -s --color=always '
 alias ll='ls -lha --color=always'
 alias ltr='ls -lsatr --color=always'
 alias lr='cls ; ls -lastr --color=always | tail -n 40'
