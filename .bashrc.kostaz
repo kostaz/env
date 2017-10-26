@@ -41,9 +41,9 @@ alias shfind='find . -iname "*.[h]" | xargs grep --color=auto -nH '
 #
 # Git most useful commands
 #
-alias gs='git status --color=always'
+alias gs='git status'
 alias gb='git branch --color=always'
-alias ga='git add --color=always'
+alias ga='git add'
 alias gd='git diff --ignore-all-space --color=always'
 
 alias gsi='git show --ignore-all-space --color=always'
