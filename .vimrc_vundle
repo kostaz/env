@@ -246,7 +246,7 @@ call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
-set colorcolumn=80
+set colorcolumn=80,100,120
 highlight ColorColumn ctermbg=darkgray
 
 "Here are some settings for diff mode, the colors are troublesome.
