@@ -372,3 +372,5 @@ endif
 " ==============================================================================
 " Support text reformatting with gq
 set textwidth=70
+
+set paste " to ease pasting of more than one line
