@@ -22,6 +22,11 @@
 # update ~/.zshrc with:
 # 1) source ~/.bashrc.kostaz
 # 2) DISABLE_AUTO_TITLE="true" (to keep byobu tab name)
+# 3) Update `~/.oh-my-zsh/themes/robbyrussell.zsh-theme` (use %d and $'\n')
+# orig:
+# PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+# updated:
+# PROMPT='${ret_status} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)'$'\n'
 
 # Batch 03
 # ========
