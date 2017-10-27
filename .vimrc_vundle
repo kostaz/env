@@ -368,3 +368,7 @@ if has("gui_gtk") || has("gui_gtk2") || has("gui_gnome") || has("unix")
     " directory name (/something/src)
     nnoremap <leader>ch :let @+=expand("%:p:h")<CR>
 endif
+
+" ==============================================================================
+" Support text reformatting with gq
+set textwidth=70
