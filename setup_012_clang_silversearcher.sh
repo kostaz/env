@@ -5,6 +5,7 @@
 sudo apt-get install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev
 
 sudo apt-get install -y \
+    clang \
     clang-3.8 clang-3.8-doc clang-3.8-examples clang-format-3.8 \
     clang-tidy-3.8 libclang-3.8-dev libclang-common-3.8-dev
 
