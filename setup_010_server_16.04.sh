@@ -1,14 +1,5 @@
 #!/bin/bash
 
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "!!!"
-echo "Enable all the commented repositories in file /etc/apt/sources.list"
-echo "Then re-run this script"
-echo "!!!"
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-
-sleep 3
-
 # Setup needed programs and utilities
 # ================================================================================
 sudo dpkg --add-architecture i386 && \
@@ -103,12 +94,3 @@ sudo apt-get install -y xinetd && \
 sudo apt-get install -y tftpd && \
 sudo apt-get install -y tftp && \
 sudo apt-get install -y ncftp # ncftp -u pavel -p 123456 194.90.136.1
-
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "!!!"
-echo "Enable all the commented repositories in file /etc/apt/sources.list"
-echo "Then re-run this script"
-echo "!!!"
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-
-echo "!!! Update name and email in .gitconfig !!!"
