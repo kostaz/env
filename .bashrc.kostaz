@@ -115,8 +115,8 @@ function c()
 	ls -lsa
 }
 
-alias ag='ag -t --hidden -i --color=always '
-alias agI='ag -t --hidden -s --color=always '
+alias ag='ag -t --hidden -i '
+alias agI='ag -t --hidden -s '
 alias ll='ls -lha --color=always'
 alias ltr='ls -lsatr --color=always'
 alias lr='cls ; ls -lastr --color=always | tail -n 40'
