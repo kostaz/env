@@ -1,5 +1,8 @@
 #!/bin/bash -x
 
+sudo apt install git
+sudo apt install vim
+
 # update /etc/sudoers
 # uncomment /etc/apt/sources.list
 # apt update
@@ -9,6 +12,7 @@
 # Batch 01
 # ========
 ./setup_021_git.sh
+# Update ~/.gitconfig
 ./setup_011_bashrc.sh
 ./setup_010_server_16.04.sh
 ./setup_030_server_manual.sh
