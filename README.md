@@ -12,12 +12,13 @@ Step 1 - Basic
 Step 2 - Ease The Flow
 ======================
 - Update `/etc/sudoers` to make `sudo` without password.
-- Uncomment all repos at `/etc/apt/sources.list` file.
+  See the example `sudoers*` files.
+- Uncomment all `deb http://...` repos at `/etc/apt/sources.list` file.
 - Update `apt` cache and upgrade the machine:
   ```
-  $ apt update
-  $ apt upgrade
-  $ reboot
+  $ sudo apt update
+  $ sudo apt upgrade
+  $ sudo reboot
   ```
 
 Step 3 - Git
@@ -82,3 +83,14 @@ Step 8 - Atom-Fast Search
 Step 9 - Make It Fresh
 ======================
 `reboot`
+
+
+Step 10 - Install GUI apps
+==========================
+#### Note: Do **not** do it if you want only the GUI-less functionality!
+  ```
+  $ ./setup_010_desktop.sh
+  $ ./setup_030_desktop_manual.sh
+  ```
+
+Done! :-)
