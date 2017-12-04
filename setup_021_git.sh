@@ -1,6 +1,14 @@
 #!/bin/bash
 
-cp -R .gitconfig ~
+# Take the timestamp.
+ts=`date +"%Y-%m-%d_%H:%M:%S"`
+
+# Save the original file with timestamp.
+if [ -f ~/.gitconfig ] ; then
+    cp ~/.gitconfig ~/.gitconfig_orig_${ts}
+fi
+
+cp .gitconfig ~
 
 # Install Git
 sudo apt-get install -y git
