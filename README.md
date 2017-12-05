@@ -71,7 +71,7 @@ Step 7 - Vim It All
   $ ./setup_020_vim_vundle.sh
   $ vim ~/.vimrc
   ```
-- Inside vim run `:PluginsInstall`
+- Inside vim run `:PluginInstall`
 
 Step 8 - Atom-Fast Search
 =========================
