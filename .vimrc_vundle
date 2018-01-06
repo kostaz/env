@@ -217,7 +217,7 @@ nmap <leader>vv :set mouse=v<cr>
 nnoremap <silent> <Esc><Esc> :qa<CR>
 nnoremap <silent> <Esc><Esc><Esc> :qa!<CR>
 
-set guifont=Ubuntu\ Mono\ 15
+set guifont=Ubuntu\ Mono\ 18
 " set guioptions+=b " Horizontal scripts bar
 set guioptions=agilrv " Default agimrLtT
 colorscheme default
@@ -371,7 +371,9 @@ endif
 
 " ==============================================================================
 " Support text reformatting with gq
-set textwidth=70
+" Keep `textwidth` huge, because some plugins does auto-line-break
+" on the `textwidth` value.
+set textwidth=10000 " default 500
 
 set paste " to ease pasting of more than one line
 
