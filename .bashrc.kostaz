@@ -38,6 +38,7 @@ alias ofindI='find . -iname "*.[o]" | xargs grep --color=auto -nH '
 alias sfind='find . -iname "*.[s]" | xargs grep --color=auto -inH '
 alias shfind='find . -iname "*.[h]" | xargs grep --color=auto -nH '
 
+
 #
 # Git most useful commands
 #
@@ -54,6 +55,13 @@ alias gdt='git difftool '
 
 alias gg='git grep --ignore-case --color=always '
 alias ggI='git grep --color=always '
+
+# Sort remote branches by date
+alias gbsr="git for-each-ref --sort=committerdate refs/remotes --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+
+# Sort tags by date
+alias gbst="git for-each-ref --sort=committerdate refs/tags --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+
 
 #
 # clear screen for real
