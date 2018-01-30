@@ -4,3 +4,6 @@
 # ================================================================================
 sudo apt-get install -y vim-gtk && \
 sudo apt-get install -y emacs
+
+sudo apt-get install -y xcscope-el
+# Now, copy .emacs file to ~ !!
