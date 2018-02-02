@@ -189,6 +189,21 @@ function c()
 	ls -lsa
 }
 
+function ffmd5sumvim()
+{
+	ff | xargs md5sum | sort | vim -
+}
+
+function fffilevim()
+{
+	ff | xargs file | vim -
+}
+
+function fflsvim()
+{
+	ff | xargs ls -ls | vim -
+}
+
 alias ag='ag -t --hidden -i '
 alias agI='ag -t --hidden -s '
 alias ll='ls -lha --color=always'
