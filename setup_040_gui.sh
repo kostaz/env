@@ -12,7 +12,8 @@ sudo apt-get install -y remmina && \
 sudo apt-get install -y kazam && \
 sudo apt-get install -y kdiff3 && \
 sudo apt-get install -y chromium-browser && \
-sudo apt-get install -y filezilla
+sudo apt-get install -y filezilla && \
+sudo apt-get install -y synapse
 
 sudo apt-get install -y flashplugin-installer
 sudo apt-get install -y deluge
