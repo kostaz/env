@@ -42,6 +42,10 @@ Step 4 - Main Blow
   $ ./setup_150_smarts.sh
   $ ./setup_080_opx.sh
   $ ./setup_012_clang_silversearcher.sh
+  $ ./setup_140_server_repo_tool.sh
+  $ ./setup_170_server_python.sh*
+  $ ./setup_115_meson_build.sh*
+  $ ./setup_070_misc.sh*
   ```
 
 Step 5 - ZShell My Life
@@ -92,6 +96,7 @@ Step 10 - Install GUI apps
   $ ./setup_010_desktop.sh
   $ ./setup_030_desktop_manual.sh
   $ ./setup_040_gui.sh
+  $ ./setup_040_tor_browser.sh*
   ```
 
 Done! :-)
