@@ -199,9 +199,16 @@ function fffilevim()
 	ff | xargs file | vim -
 }
 
+function ffvim()
+{
+	term=$@
+	ff ${term} | vim -
+}
+
 function fflsvim()
 {
-	ff | xargs ls -ls | vim -
+	term=$@
+	ff ${term} | xargs ls -ls | vim -
 }
 
 alias ag='ag -t --hidden -i '
