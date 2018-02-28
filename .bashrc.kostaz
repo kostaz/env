@@ -86,10 +86,16 @@ function sf()
 	find . -name "*${term}*"
 }
 
-function ff()
+function ffraw()
 {
 	term=$@
 	find . -not -type d -iname "*${term}*"
+}
+
+function ff()
+{
+	term=$@
+	find . -not -type d -iname "*${term}*" | sort
 }
 
 function ff1()
