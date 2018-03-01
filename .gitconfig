@@ -19,6 +19,7 @@
 	d = difftool
 [core]
 	editor = vim -f
+	pager = less -F -X
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
