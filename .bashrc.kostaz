@@ -225,6 +225,18 @@ alias lr='cls ; ls -lstr --color=always | tail -n 40'
 alias lra='cls ; ls -lastr --color=always | tail -n 40'
 alias l='cls ; ls -lsa --color=always'
 
+function agvim()
+{
+	term=$@
+	ag ${term} | sort | uniq | vim -
+}
+
+function aglvim()
+{
+	term=$@
+	ag -l ${term} | sort | uniq | vim -
+}
+
 alias vims='[[ -e "Session.vim" ]] && vim -S Session.vim || vim'
 alias gvims='[[ -e "Session.vim" ]] && gvim -S Session.vim || gvim'
 
