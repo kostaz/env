@@ -237,7 +237,12 @@ function aglvim()
 	ag -l ${term} | sort | uniq | vim -
 }
 
-alias rfa='repo forall -c'
+function rfa()
+{
+	term=$@
+	cmd="git remote get-url --all bitbucket && ${term}"
+	repo forall -c $cmd
+}
 
 alias vims='[[ -e "Session.vim" ]] && vim -S Session.vim || vim'
 alias gvims='[[ -e "Session.vim" ]] && gvim -S Session.vim || gvim'
