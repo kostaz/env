@@ -240,7 +240,7 @@ function aglvim()
 function rfa()
 {
 	term=$@
-	cmd="git remote get-url --all bitbucket && ${term}"
+	cmd="git remote get-url --all origin && ${term}"
 	repo forall -c $cmd
 }
 
