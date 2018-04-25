@@ -29,8 +29,6 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'drmikehenry/vim-fontsize'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/syntastic'
 Plugin 'will133/vim-dirdiff'
 
 Plugin 'ap/vim-css-color'
@@ -40,8 +38,13 @@ Plugin 'othree/html5.vim'
 Plugin 'sheerun/vim-polyglot'
 
 " http://vimcolors.com
+Plugin 'kadekillary/subtle_solo'
+Plugin 'lmintmate/blue-mood-vim'
 Plugin 'muellan/am-colors'
 Plugin 'albertorestifo/github.vim'
+Plugin 'Renxiuhu/vim-colorscheme' " :colorscheme tatami
+Plugin 'nightsense/stellarized'
+Plugin 'robertmeta/nofrils'
 
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'shougo/unite.vim'
@@ -224,7 +227,7 @@ set guifont=Ubuntu\ Mono\ 18
 set guioptions=agilrv " Default agimrLtT
 colorscheme default
 
-set linespace=0
+set linespace=7
 set nospell
 
 map <C-n> :NERDTreeToggle<CR>
