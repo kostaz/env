@@ -24,7 +24,17 @@ Plugin 'fatih/vim-go'
 Plugin 'rogpeppe/godef'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'vim-scripts/Printer-Dialog'
+
+" ==============================================================================
 Plugin 'vim-scripts/vim-auto-save'
+let g:auto_save = 1
+let g:auto_save_no_updatetime = 1
+let g:auto_save_silent = 0
+let g:auto_save_in_insert_mode = 0
+au BufLeave,FocusLost * silent! wa
+set autowriteall
+
+" ==============================================================================
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'drmikehenry/vim-fontsize'
 Plugin 'junegunn/fzf'
@@ -293,14 +303,6 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
-
-" https://github.com/vim-scripts/vim-auto-save
-let g:auto_save = 1
-let g:auto_save_no_updatetime = 1
-let g:auto_save_silent = 0
-let g:auto_save_in_insert_mode = 0
-au FocusLost * :wa
-set autowriteall
 
 set cursorline   " highlight current line
 " set cursorcolumn " highlight current column
