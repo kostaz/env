@@ -57,6 +57,14 @@ Plugin 'bling/vim-airline'
 
 Plugin 'godlygeek/tabular'
 
+" ==============================================================================
+" leader-m  : mark current word
+" leader-mc : clear all marks
+" leader-*  : jump to the next occurence of the marked word under the cursor
+" leader-/  : jump to the next occurence of _any_ marked word
+Plugin 'mihais/vim-mark'
+map <leader>mc :MarkClear<cr>
+
 " Plugin 'jeetsukumaran/vim-buffergator'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -194,7 +202,7 @@ map <leader>cd :cd %:p:h<cr>
 set laststatus=2
 
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+noremap <Leader>mm mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 set listchars=tab:>-
 set nolist
