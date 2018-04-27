@@ -3,61 +3,97 @@ My Ubuntu environment for a good life!
 
 Step 1 - Basic
 ==============
-- Install basic stuff:
+Install basic stuff.
 
-Command for copy:
+##### Command for copy-paste:
 ```
 sudo apt install git
 sudo apt install vim
 ```
 
+---
+
 Step 2 - Ease The Flow
 ======================
-- Update `/etc/sudoers` to make `sudo` without password.
-  See the example `sudoers*` files.
+### Enable `sudo` without a password
+- Update `/etc/sudoers` to enable `sudo` without a password.
+- See the example `sudoers.no_password` file.
 
-Command for copy:
+Replace:
 ```
-sudo gvimdiff ./sudoers.no_password /etc/sudoers
+%sudo	ALL=(ALL:ALL) ALL
+```
+with:
+```
+%sudo	ALL=(ALL) NOPASSWD:ALL
+```
+in `/etc/sudoers` file.
+
+##### Command for copy-paste:
+```
+sudo cp ./sudoers.no_password /etc/sudoers
 ```
 
+---
+
+### Enable all apt repositories
 - Uncomment all `deb http://...` repos at `/etc/apt/sources.list` file.
 - Update `apt` cache and upgrade the machine:
-  ```
-  $ sudo apt update
-  $ sudo apt upgrade
-  $ sudo reboot
-  ```
 
+##### Command for copy-paste:
+```
+sudo apt update
+sudo apt upgrade
+sudo reboot
+```
 
+##### Fix error for avahi-daemon during update/upgrade
+Note - in case of problems with **avahi-daemon** during `sudo apt update` or `sudo apt upgrade`
+disable the avahi-deamon and re-enable after the update/upgrade.
+Reference: https://ubuntuforums.org/showthread.php?t=2388648
+
+Example of error with avahi-daemon:
+```
 Job for avahi-daemon.socket canceled.
 dpkg: error processing archive /var/cache/apt/archives/avahi-dnsconfd_0.6.32~rc+dfsg-1ubuntu2.1_amd64.deb (--unpack):
  subprocess new pre-removal script returned error exit status 1
 Errors were encountered while processing:
  /var/cache/apt/archives/avahi-dnsconfd_0.6.32~rc+dfsg-1ubuntu2.1_amd64.deb
 E: Sub-process /usr/bin/dpkg returned an error code (1)
+```
 
-https://ubuntuforums.org/showthread.php?t=2388648
-
+##### Command for copy-paste:
+```
 sudo systemctl disable avahi-daemon
-sudo apt update && sudo apt upgrade
+sudo apt update
+sudo apt upgrade
 sudo systemctl enable avahi-daemon
+```
+
+---
 
 Step 3 - Git
 ============
-- Install git stuff:
-  ```
-  $ ./setup_021_git.sh
-  ```
-- Update git configuration:
-  ```
-vim ~/.gitconfig
-  ```
+Install git using the command below.
+##### Command for copy-paste:
+```
+./setup_021_git.sh
+```
+
+Update name and email in git configuration file `~/.gitconfig`.
+```
+[user]
+	name = Kosta Zertsekel
+	email = zertsekel@gmail.com
+```
+
+---
 
 Step 4 - Main Blow
 ==================
-- Install the main utils for life and happiness:
+Install the main utils for life and happiness.
 
+##### Command for copy-paste:
 ```
 ./setup_011_bashrc.sh
 ./setup_010_server_16.04.sh
@@ -71,56 +107,78 @@ Step 4 - Main Blow
 ./setup_070_misc.sh*
 ```
 
+---
+
 Step 5 - ZShell My Life
 =======================
-- Install zsh:
+Install zsh (Z Shell).
 
+##### Command for copy-paste:
 ```
 ./setup_120_zsh.sh
 ```
 
-- Configure zsh - update `~/.zshrc` with:
-  1) `source ~/.bashrc.kostaz` and
-  2) `DISABLE_AUTO_TITLE="true"` (to keep byobu tab name)
-- Configure zsh - update default theme with double `\n\n` and full path:
-  - `vim ~/.oh-my-zsh/themes/robbyrussell.zsh-theme` (use %d and $'\n')
-  - `PROMPT='${ret_status} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)'$'\n\n'`
+Configure zsh - update `~/.zshrc` with:
+  - Add `source ~/.bashrc.kostaz` after `source $ZSH/oh-my-zsh.sh` line.
+  - Set `DISABLE_AUTO_TITLE="true"`.
+
+Configure zsh - update default theme with double `\n\n` and full path:
+  - In `~/.oh-my-zsh/themes/robbyrussell.zsh-theme` file replace `%c` with `%d` and add `$'\n'`
+  - The end result should like below:
+    `PROMPT='${ret_status} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)'$'\n\n'`
+
+---
 
 Step 6 - Golang
 ===============
-- Install golang:
+Install go language.
 
+##### Command for copy-paste:
 ```
 ./setup_110_golang.sh
 ```
 
+---
+
 Step 7 - Vim It All
 ===================
-- Install vim with best plugins:
+Install vim with best plugins.
+
+##### Command for copy-paste:
 ```
 ./setup_020_vim_vundle.sh
 vim ~/.vimrc
 ```
-- Inside vim run `:PluginInstall`
+Inside vim run `:PluginInstall` to install all vim plugins.
+
+---
 
 Step 8 - Atom-Fast Search
 =========================
-- Install FZF tool:
+Install FZF tool for fastest searchers in the world!
 
-Command to copy:
+##### Command for copy-paste:
 ```
 ./setup_013_fzf_manual.sh
 ```
+Answer yes (`y`) for all questions.
+
+---
 
 Step 9 - Make It Fresh
 ======================
-`reboot`
+##### Command for copy-paste:
+```
+sudo reboot
+```
 
+---
 
 Step 10 - Install GUI apps
 ==========================
 #### Note: Do **not** do it if you want only the GUI-less functionality!
 
+##### Command for copy-paste:
 ```
 ./setup_010_desktop.sh
 ./setup_030_desktop_manual.sh
@@ -128,10 +186,25 @@ Step 10 - Install GUI apps
 ./setup_040_tor_browser.sh*
 ```
 
+---
 
-add vino server
-add vino preferences
+Step 11 - Enable VNC via vino server
+=============================
+##### Command for copy-paste:
+```
+sudo apt install vino
+```
 
-buben: dconf write /org/gnome/desktop/remote-access/require-encryption false
+Configure vino VNC server.
+##### Command for copy-paste:
+```
+sudo vino-preferences
+```
+
+Enable VNC connection without an encryption.
+##### Command for copy-paste:
+```
+sudo dconf write /org/gnome/desktop/remote-access/require-encryption false
+```
 
 Done! :-)
