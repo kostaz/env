@@ -353,6 +353,9 @@ map <C-c> "+y<CR>
 " Select all text
 nmap <C-a> ggVG
 
+" set paste disables paste from clipboard with <Shift-Insert>
+set nopaste " to ease pasting of more than one line
+
 " ******************************************************************************
 " Copy file name, file path to system clipboard
 " https://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim
@@ -379,7 +382,5 @@ endif
 " Keep `textwidth` huge, because some plugins does auto-line-break
 " on the `textwidth` value.
 set textwidth=10000 " default 500
-
-set paste " to ease pasting of more than one line
 
 let g:NERDSpaceDelims = 1
