@@ -67,6 +67,8 @@ Plugin 'bling/vim-airline'
 
 Plugin 'godlygeek/tabular'
 
+Plugin 'Yggdroot/indentLine'
+
 " ==============================================================================
 " leader-m  : mark current word
 " leader-mc : clear all marks
