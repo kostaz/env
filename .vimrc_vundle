@@ -70,6 +70,17 @@ Plugin 'godlygeek/tabular'
 Plugin 'Yggdroot/indentLine'
 
 " ==============================================================================
+Plugin 'bbchung/gtags.vim'
+" reference
+map <leader>gr :Gtags -r<cr>
+" symbols which are not defined in GTAGS
+map <leader>gs :Gtags -s<cr>
+" grep
+map <leader>gg :Gtags -r<cr>
+" get list of objects in a file
+map <leader>gf :Gtags -f<cr>
+
+" ==============================================================================
 " leader-m  : mark current word
 " leader-mc : clear all marks
 " leader-*  : jump to the next occurence of the marked word under the cursor
