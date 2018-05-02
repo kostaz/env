@@ -6,10 +6,10 @@ sudo dpkg --add-architecture i386 && \
 sudo apt-get update  -y && \
 sudo apt-get install -y bc && \
 sudo apt-get install -y flex && \
-sudo apt-get install -y libreadline6 libreadline6-dev && \
 sudo apt-get install -y bison bison-doc && \
 sudo apt-get install -y libtool libtool-bin libtool-doc && \
 sudo apt-get install -y libxml2 libxml2-dbg libxml2-dev libxml2-doc libxml2-utils && \
+sudo apt-get install -y libreadline7 libreadline-dev readline-doc && \
 sudo apt-get install -y expect && \
 sudo apt-get install -y gettext && \
 sudo apt-get install -y git && \
@@ -63,7 +63,6 @@ sudo apt-get install -y ethtool && \
 sudo apt-get install -y wireless-tools && \
 sudo apt-get install -y wpasupplicant && \
 sudo apt-get install -y htop && \
-sudo apt-get install -y pdftk && \
 sudo apt-get install -y valgrind && \
 sudo apt-get install -y ranger && \
 sudo apt-get install -y glances && \
