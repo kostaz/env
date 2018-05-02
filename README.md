@@ -194,10 +194,7 @@ sudo apt install vino
 ```
 
 Configure vino VNC server.
-##### Command for copy-paste:
-```
-sudo vino-preferences
-```
+Use GUI settings `Sharing` to enable remote VNC vino sessions.
 
 Enable VNC connection without an encryption.
 ##### Command for copy-paste:
