@@ -18,11 +18,11 @@ sudo apt-get install -y synapse
 sudo apt-get install -y flashplugin-installer
 sudo apt-get install -y deluge
 
-#### # Telegram
-#### sudo add-apt-repository -y ppa:atareao/telegram
-#### sudo apt-get update     -y
-#### sudo apt-get install    -y telegram
-####
+# Telegram
+sudo add-apt-repository -y ppa:atareao/telegram
+sudo apt-get update     -y
+sudo apt-get install    -y telegram
+
 #### # Slack
 #### sudo apt-add-repository -y ppa:rael-gc/scudcloud
 #### echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections

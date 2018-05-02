@@ -6,10 +6,10 @@ sudo dpkg --add-architecture i386 && \
 sudo apt-get update  -y && \
 sudo apt-get install -y bc && \
 sudo apt-get install -y flex && \
-sudo apt-get install -y bison && \
-sudo apt-get install -y libtool libtool-bin && \
-sudo apt-get install -y libxml2 libxml2-dev && \
 sudo apt-get install -y libreadline6 libreadline6-dev && \
+sudo apt-get install -y bison bison-doc && \
+sudo apt-get install -y libtool libtool-bin libtool-doc && \
+sudo apt-get install -y libxml2 libxml2-dbg libxml2-dev libxml2-doc libxml2-utils && \
 sudo apt-get install -y expect && \
 sudo apt-get install -y gettext && \
 sudo apt-get install -y git && \
