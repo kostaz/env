@@ -17,6 +17,7 @@ sudo apt-get install -y synapse
 
 sudo apt-get install -y flashplugin-installer
 sudo apt-get install -y deluge
+sudo apt-get install -y vim-gtk3
 
 # Telegram
 sudo add-apt-repository -y ppa:atareao/telegram
