@@ -72,13 +72,15 @@ Plugin 'Yggdroot/indentLine'
 " ==============================================================================
 Plugin 'bbchung/gtags.vim'
 " reference
-map <leader>gr :Gtags -r<cr>
+map <leader>gr :Gtags -r<cr><cr>
 " symbols which are not defined in GTAGS
-map <leader>gs :Gtags -s<cr>
+map <leader>gs :Gtags -s<cr><cr>
 " grep
-map <leader>gg :Gtags -r<cr>
+map <leader>gg :Gtags -r<cr><cr>
 " get list of objects in a file
-map <leader>gf :Gtags -f<cr>
+map <leader>gf :Gtags -f<cr><cr>
+" xxx
+map <leader>gx :Gtags -x<cr><cr>
 
 " ==============================================================================
 " leader-m  : mark current word
