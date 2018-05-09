@@ -24,6 +24,9 @@ sudo add-apt-repository -y ppa:atareao/telegram
 sudo apt-get update     -y
 sudo apt-get install    -y telegram
 
+# Anki Flash Cards
+sudo apt-get install    -y anki
+
 #### # Slack
 #### sudo apt-add-repository -y ppa:rael-gc/scudcloud
 #### echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
