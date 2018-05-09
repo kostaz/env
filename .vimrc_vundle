@@ -81,6 +81,7 @@ map <leader>gg :Gtags -r<cr><cr>
 map <leader>gf :Gtags -f<cr><cr>
 " xxx
 map <leader>gx :Gtags -x<cr><cr>
+nmap <F3> :Gtags -x<cr><cr>
 
 " ==============================================================================
 " leader-m  : mark current word
