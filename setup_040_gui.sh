@@ -13,11 +13,22 @@ sudo apt-get install -y kazam && \
 sudo apt-get install -y kdiff3 && \
 sudo apt-get install -y chromium-browser && \
 sudo apt-get install -y filezilla && \
-sudo apt-get install -y synapse
+sudo apt-get install -y synapse && \
+sudo apt-get install -y flashplugin-installer && \
+sudo apt-get install -y deluge && \
+sudo apt-get install -y vim-gtk3 && \
+sudo apt-get install -y calibre # for asciidoc book toolchain
 
-sudo apt-get install -y flashplugin-installer
-sudo apt-get install -y deluge
-sudo apt-get install -y vim-gtk3
+# TeamViewer
+teamviewer_deb="https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
+sudo apt-get install -y gdebi-core && \
+axel -n 20 -a $teamviewer_deb && \
+sudo gdebi teamviewer_amd64.deb
+
+# Notepadqq
+sudo add-apt-repository -y ppa:notepadqq-team/notepadqq && \
+sudo apt-get update     -y && \
+sudo apt-get install    -y notepadqq
 
 # Telegram
 sudo add-apt-repository -y ppa:atareao/telegram
