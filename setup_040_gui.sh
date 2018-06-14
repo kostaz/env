@@ -3,6 +3,7 @@
 # GUI
 # ================================================================================
 sudo apt-get install -y gnome-disk-utility && \
+sudo apt-get install -y gnome-tweak-tool && \
 sudo apt-get install -y shutter && \
 sudo apt-get install -y inkscape && \
 sudo apt-get install -y mypaint && \
