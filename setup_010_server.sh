@@ -1,5 +1,28 @@
 #!/bin/bash
 
+cat /etc/issue
+
+grep_res=`grep 18 /etc/issue`
+
+if [ ! -z "$grep_res" ] ; then
+	is_ubuntu_18=1
+else
+	is_ubuntu_18=0
+fi
+
+if [ "$is_ubuntu_18" -eq "1" ] ; then
+	echo "This is Ubuntu 18.04"
+else
+	echo "This is NOT Ubuntu 18.04"
+fi
+
+if [ "$is_ubuntu_18" -eq "1" ] ; then
+	sudo apt-get install -y libreadline7 libreadline-dev readline-doc
+else
+	sudo apt-get install -y libreadline6 libreadline6-dev
+	sudo apt-get install -y pdftk
+fi
+
 # Setup needed programs and utilities
 # ================================================================================
 sudo dpkg --add-architecture i386 && \
@@ -9,7 +32,6 @@ sudo apt-get install -y flex && \
 sudo apt-get install -y bison bison-doc && \
 sudo apt-get install -y libtool libtool-bin libtool-doc && \
 sudo apt-get install -y libxml2 libxml2-dbg libxml2-dev libxml2-doc libxml2-utils && \
-sudo apt-get install -y libreadline7 libreadline-dev readline-doc && \
 sudo apt-get install -y expect && \
 sudo apt-get install -y gettext && \
 sudo apt-get install -y git && \

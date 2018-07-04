@@ -195,6 +195,14 @@ sudo apt install vino
 ```
 
 Configure vino VNC server.
+
+##### For Ubuntu 16.04:
+##### Command for copy-paste:
+```
+sudo vino-preferences
+```
+
+##### For Ubuntu 18.04:
 Use GUI settings `Sharing` to enable remote VNC vino sessions.
 
 Enable VNC connection without an encryption.
