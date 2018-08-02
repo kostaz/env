@@ -18,6 +18,8 @@ sudo apt-get install -y synapse && \
 sudo apt-get install -y flashplugin-installer && \
 sudo apt-get install -y deluge && \
 sudo apt-get install -y vim-gtk3 && \
+sudo apt-get install -y dconf-editor && \
+sudo apt-get install -y virtualbox && \
 sudo apt-get install -y calibre # for asciidoc book toolchain
 
 # TeamViewer
@@ -38,6 +40,11 @@ sudo apt-get install    -y telegram
 
 # Anki Flash Cards
 sudo apt-get install    -y anki
+
+# OBS Studio
+sudo add-apt-repository -y ppa:obsproject/obs-studio
+sudo apt update         -y
+sudo apt-get install    -y obs-studio
 
 #### # Slack
 #### sudo apt-add-repository -y ppa:rael-gc/scudcloud
