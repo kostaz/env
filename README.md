@@ -96,7 +96,7 @@ Install the main utils for life and happiness.
 ##### Command for copy-paste:
 ```
 ./setup_011_bashrc.sh
-./setup_010_server_16.04.sh
+./setup_010_server.sh
 ./setup_200_git_commit_template.sh
 ./setup_030_server_manual.sh
 ./setup_150_smarts.sh
