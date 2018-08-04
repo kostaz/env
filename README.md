@@ -182,6 +182,7 @@ Step 10 - Install GUI apps
 ./setup_010_desktop.sh
 ./setup_030_desktop_manual.sh
 ./setup_040_gui.sh
+./setup_040_zoom.sh
 ```
 
 ---

@@ -22,12 +22,6 @@ sudo apt-get install -y dconf-editor && \
 sudo apt-get install -y virtualbox && \
 sudo apt-get install -y calibre # for asciidoc book toolchain
 
-# TeamViewer
-teamviewer_deb="https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
-sudo apt-get install -y gdebi-core && \
-axel -n 20 -a $teamviewer_deb && \
-sudo gdebi teamviewer_amd64.deb
-
 # Notepadqq
 sudo add-apt-repository -y ppa:notepadqq-team/notepadqq && \
 sudo apt-get update     -y && \
