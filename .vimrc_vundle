@@ -259,7 +259,9 @@ set guifont=Ubuntu\ Mono\ 18
 set guioptions=agilrv " Default agimrLtT
 colorscheme default
 
-set linespace=7
+" Match linespace to terminal-based vim
+set linespace=0
+
 set nospell
 
 map <C-n> :NERDTreeToggle<CR>
