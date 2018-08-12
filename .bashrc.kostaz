@@ -219,7 +219,7 @@ function fflsvim()
 
 alias ag='ag -t --hidden -i '
 alias agI='ag -t --hidden -s '
-alias ll='ls -lha --color=always'
+alias ll='ls -lh --color=always'
 alias ltr='ls -lsatr --color=always'
 alias lr='cls ; ls -lstr --color=always | tail -n 40'
 alias lra='cls ; ls -lastr --color=always | tail -n 40'
