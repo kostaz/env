@@ -98,7 +98,7 @@ Install the main utils for life and happiness.
 ./setup_011_bashrc.sh
 ./setup_010_server.sh
 ./setup_030_server_manual.sh
-./setup_080_opx.sh
+./setup_080_opx.sh # only if needed for OPX
 ./setup_012_clang_silversearcher.sh
 ./setup_140_server_repo_tool.sh
 ./setup_170_server_python.sh*
