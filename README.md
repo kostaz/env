@@ -97,7 +97,6 @@ Install the main utils for life and happiness.
 ```
 ./setup_011_bashrc.sh
 ./setup_010_server.sh
-./setup_200_git_commit_template.sh
 ./setup_030_server_manual.sh
 ./setup_080_opx.sh
 ./setup_012_clang_silversearcher.sh
