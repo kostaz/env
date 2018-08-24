@@ -76,6 +76,7 @@ sudo apt-get install -y u-boot-tools && \
 sudo apt-get install -y minicom && \
 sudo apt-get install -y libssl-dev && \
 sudo apt-get install -y openssh-server && \
+sudo apt-get install -y mosh && \
 sudo apt-get install -y libwrap0-dev && \
 sudo apt-get install -y openjdk-8-jre && \
 sudo apt-get install -y tmux && \
