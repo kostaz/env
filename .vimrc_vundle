@@ -33,7 +33,6 @@ au BufLeave,FocusLost * silent! wa
 set autowriteall
 
 " ==============================================================================
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'drmikehenry/vim-fontsize'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
