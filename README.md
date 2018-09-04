@@ -123,7 +123,7 @@ Configure zsh - update `~/.zshrc` with:
 Configure zsh - update default theme with double `\n\n` and full path:
   - In `~/.oh-my-zsh/themes/robbyrussell.zsh-theme` file replace `%c` with `%d` and add `$'\n'`
   - The end result should like below:
-    `PROMPT='${ret_status} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)'$'\n\n'`
+    `PROMPT=$'\n''${ret_status} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)'$'\n\n'`
 
 ---
 
