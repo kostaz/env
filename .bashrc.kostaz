@@ -217,6 +217,11 @@ function fflsvim()
 	ff ${term} | xargs ls -ls | vim -
 }
 
+function ffsortsz()
+{
+	find . -type f -exec du -h {} + | sort -h
+}
+
 alias ag='ag -t --hidden -i '
 alias agI='ag -t --hidden -s '
 alias ll='ls -lh --color=always'
