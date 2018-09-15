@@ -125,6 +125,11 @@ Configure zsh - update default theme with double `\n\n` and full path:
   - The end result should like below:
     `PROMPT=$'\n''${ret_status} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)'$'\n\n'`
 
+Save changes to `~/.oh-my-zsh` back to git:
+  - `cd ~/.oh-my-zsh`
+  - `ga -u`
+  - `gcsm 'WIP'`
+
 ---
 
 Step 6 - Golang
