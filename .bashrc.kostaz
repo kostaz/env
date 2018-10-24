@@ -211,6 +211,12 @@ function ffvim()
 	ff ${term} | vim -
 }
 
+function ffls()
+{
+	term=$@
+	ff ${term} | xargs ls -ls
+}
+
 function fflsvim()
 {
 	term=$@
