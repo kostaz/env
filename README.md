@@ -103,7 +103,6 @@ Install the main utils for life and happiness.
 ./setup_012_clang_silversearcher.sh
 ./setup_140_server_repo_tool.sh
 ./setup_170_server_python.sh
-./setup_070_misc.sh
 ./setup_220_ripgrep.sh
 ```
 
@@ -198,6 +197,7 @@ Step 10 - Install GUI apps
 ./setup_030_desktop_manual.sh
 ./setup_040_gui.sh
 ./setup_040_zoom.sh
+./setup_070_misc.sh
 ```
 
 ---
